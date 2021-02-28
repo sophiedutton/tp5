@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+ul ul {
+  list-style-type: circle;
+}
+
+#directions {
+  font-family: "Lato", sans-serif;
+}
+
+#equipment {
+  font-family: "Lato", sans-serif;
+}
+
+#ingredients {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+}
+
+.highlight {
+  background-color: #ffc0cb;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+div {
+  margin: auto;
+  width: 50%;
+  border: 3px;
+  padding: 10px;
+}
+
+
+#directions li:nth-child(1) {
+  color: red;
+}
+
+#directions li:nth-child(2) {
+  color: orangered;
+}
+
+#directions li:nth-child(3) {
+  color: orange;
+}
+
+#directions li:nth-child(4) {
+  color: darkgoldenrod;
+}
+
+#directions li:nth-child(5) {
+  color: yellowgreen;
+}
+
+#directions li:nth-child(6) {
+  color: lightgreen;
+}
+
+#directions li:nth-child(7) {
+  color: green;
+}
+
+#directions li:nth-child(8) {
+  color: darkgreen;
+}
+
+#directions li:nth-child(9) {
+  color: lightblue;
+}
+
+#directions li:nth-child(10) {
+  color: blue;
+}
+
+#directions li:nth-child(11) {
+  color: purple;
+}
+
+#directions li:nth-child(12) {
+  color: pink;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 0px) {
+  body {
+    background-color: black;
+    color: white;
+  }
+  div {
+    border-style: dashed;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  body {
+    background-color: white;
+    color: black;
+  }
+  div {
+    border-style: dashed;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    background-color: white;
+    color: black;
+  }
+  div {
+    width: calc(100vw / 3 - 2vw);
+    display: inline-block;
+    float: left;
+    border-style: dashed;
+    padding: 1vw;
+  }
+}
