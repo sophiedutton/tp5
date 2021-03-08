@@ -32,14 +32,6 @@ p {
   font-size: 1.5em;
 }
 
-div {
-  margin: auto;
-  width: 50%;
-  border: 3px;
-  padding: 10px;
-}
-
-
 #directions li:nth-child(1) {
   color: red;
 }
@@ -97,12 +89,21 @@ div {
   margin-right: auto;
 }
 
+#ingredients,
+#equipment,
+#directions {
+  overflow: hidden;
+  height: 9.5vh;
+}
+
 @media screen and (min-width: 0px) {
   body {
     background-color: black;
     color: white;
   }
-  div {
+  #ingredients,
+  #equipment,
+  #directions {
     border-style: dashed;
     box-sizing: border-box;
   }
@@ -113,7 +114,9 @@ div {
     background-color: white;
     color: black;
   }
-  div {
+  #ingredients,
+  #equipment,
+  #directions {
     border-style: dashed;
   }
 }
@@ -123,11 +126,36 @@ div {
     background-color: white;
     color: black;
   }
-  div {
+  #ingredients,
+  #equipment,
+  #directions {
     width: calc(100vw / 3 - 2vw);
     display: inline-block;
     float: left;
     border-style: dashed;
     padding: 1vw;
   }
+}
+
+div#titleBanner {
+  display: block;
+  text-align: center;
+  float: none;
+}
+
+/* begin java */
+#titleBanner h1.click {
+  color: red;
+}
+
+div#ingredients.ingClicked {
+  height: 200vh;
+}
+
+div#equipment.equipClicked {
+  height: 200vh;
+}
+
+div#directions.dirClicked {
+  height: 200vh;
 }
